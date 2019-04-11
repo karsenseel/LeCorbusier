@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<title>Le Corbusier</title>
+</head>
+<body style="background-color: black">
+<div class="title">Le&nbsp;Corbusier</div> 
+<div class="subtitle">Modern&nbsp;Architecture</div>
+<div class="navbar">
+    <p1>Biography</p1>
+    <p2>Philosphy</p2>
+    <p3>Design</p3>
+</div>
+<div id="tile1">
+    <p4>Biography</p4>
+</div>
+<div class="designs">
+    <p5>Designs</p5>
+</div>
+<div id="arrow"></div>
+<div id="bio">Le Corbusier is a Swiss-born French architect who belongs to the&nbsp;first generation of the International school of architecture.
+              
+    Le&nbsp;Corbusier was born Charles-Edouard Jeanneret-Gris in Switzerland on October 6, 1887. In 1917, he moved to Paris and&nbsp;assumed the pseudonym Le Corbusier. In his architecture, Le&nbsp;Corbusier&nbsp;mainly builds with steel and reinforced concrete and works with elemental geometric forms. Le Corbusier's painting emphasizes clear forms and structures, which corresponds&nbsp;to&nbsp;his&nbsp;architecture.
+</div>
+<div class="line1"></div>
+<div class="line2"></div>
+
+<div class="pic1"></div>
+<div class="pic2"></div>
+<div class="pic3"></div>
+<div class="pic4"></div>
+<div class="pic5"></div>
+<div class="pic6"></div>
+<div class="pic7"></div>
+</body>
+</html>
+<script>
+window.addEventListener('scroll', function () {
+  document.body.classList[
+    window.scrollY > 200 ? 'add': 'remove'
+  ]('scrolled');
+});
+window.addEventListener('scroll', function () {
+  document.div.classList[
+    window.scrollY = 1000 ? 'add': 'remove'
+  ]('scrolled');
+});
+</script>
+<style>
+    @keyframes backdrop{
+        0%{
+            background-color: white;
+        }
+        10%{ 
+            background-color: rgb(196, 91, 91);
+        }
+        20%{
+            background-color: rgb(209, 80, 140);
+        }
+        30%{
+            background-color: rgb(125, 89, 209);
+        }
+        40%{
+            background-color: rgb(74, 105, 204);
+        }
+        50%{
+            background-color: rgb(64, 169, 211);
+        }
+        60%{
+            background-color: rgb(88, 221, 128);
+        }
+        70%{
+            background-color: rgb(115, 236, 90);
+        }
+        80%{
+            background-color: rgb(191, 223, 76);
+        }
+        90%{
+            background-color: rgb(218, 176, 62);
+        }
+        100%{
+            background-color: rgb(250, 250, 250);
+        }
+
+    }
+.title{
+    display: inline-block;
+    position: sticky;
+    background-color: black;
+    width: 0px;
+    height: 100px;
+    color: white;
+    font-size: 200px;
+    margin-top: 300px;
+    margin-left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.subtitle{
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 75px;
+    margin-top: 500px;
+    margin-left: 10px;
+    font-family: 'Muli', sans-serif;
+    opacity: 0.7;
+} 
+#tile1{
+    display: inline-block;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    width: 1425px;
+    height: 6000px;
+    margin-top: 100px;
+}
+p4{
+    color: black;
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: 700px;
+    animation-name: biography-title;
+    animation-duration: 1s;
+}
+.designs{
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -4800px;
+}
+p5{
+    color: black;
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: -500px;
+    animation-name: biography-title;
+    animation-duration: 1s;
+}
+#arrow{
+    display: inline-block;
+    position: absolute;
+    transition: opacity 0.2s linear;
+    width: 100px;
+    height: 100px;
+    margin-left: 650px;
+    margin-top: -5950px;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/custom%20%E2%80%93%201.png?raw=true');
+    
+}
+#bio{
+    display: inline-block;
+    position: absolute;
+    transition: opacity 0.2s linear;
+    width: 1200px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: -5500px;
+    font-size: 40px;
+    font-family: 'Muli', sans-serif;
+}
+.line1{
+    display: inline-block;
+    position: sticky;
+    width: 20px;
+    height: 8000px;
+    max-width: 20px;
+    max-height: 10000px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 1300px;
+    margin-top: -8000px;
+}
+.pic1{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 50px;
+    margin-top: -4550px;
+    opacity: .4;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic1.png?raw=true');
+} 
+.pic2{
+    display: inline-block;
+    position: absolute;
+    width: 750px;
+    height: 900px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 500px;
+    margin-top: -4550px;
+    opacity: .4;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic2.png?raw=true');
+}
+.pic3{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 50px;
+    margin-top: -3900px;
+    opacity: .4;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic3.png?raw=true');
+}  
+.pic4{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 500px;
+    margin-top: -3600px;
+    opacity: .4;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic4.png?raw=true');
+}
+.pic5{
+    display: inline-block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 750px;
+    margin-top: -3600px;
+    opacity: .4;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic5.png?raw=true');
+}  
+.pic6{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 50px;
+    margin-top: -3350px;
+    opacity: .4;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic6.png?raw=true');
+}
+.pic1:hover{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 50px;
+    margin-top: -4550px;
+    opacity: 1;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic1.png?raw=true');
+} 
+.pic2:hover{
+    display: inline-block;
+    position: absolute;
+    width: 750px;
+    height: 900px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 500px;
+    margin-top: -4550px;
+    opacity: 1;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic2.png?raw=true');
+}
+.pic3:hover{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 50px;
+    margin-top: -3900px;
+    opacity: 1;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic3.png?raw=true');
+}  
+.pic4:hover{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 500px;
+    margin-top: -3600px;
+    opacity: 1;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic4.png?raw=true');
+}
+.pic5:hover{
+    display: inline-block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 750px;
+    margin-top: -3600px;
+    opacity: 1;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic5.png?raw=true');
+}  
+.pic6:hover{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    max-width: 4000px;
+    max-height: 60000px;
+    background-color: grey;
+    margin-left: 50px;
+    margin-top: -3350px;
+    opacity: 1;
+    background-image: url('https://github.com/karsenseel/thingy/blob/master/pic6.png?raw=true');
+}                       
+body.scrolled #arrow {
+  opacity: 0;
+  transition: opacity 1s;
+}
+body.scrolled #arrow:hover {
+  opacity: 1.0;
+  transition: opacity 1s;
+}
+</style>
